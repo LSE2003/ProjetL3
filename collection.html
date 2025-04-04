@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collection - Cartes de Collection</title>
+    <link rel="stylesheet" href="collection.css">
+    <link rel="stylesheet" href="navbar.css">
+</head>
+<body>
+<header>
+    <button onclick="toggleNav()" class="menu-btn" aria-label="Ouvrir le menu"></button>
+</header>
+<div id="navbarContainer"></div>
+<script src="navbar.js" defer></script>
+<main>
+
+    <h1>Découvrez notre Collection de Cartes</h1>
+    <p>Explorez les différentes cartes rares et leurs caractéristiques.</p>
+
+    <!-- Indicateur de chargement -->
+    <div id="loading" style="display: none; text-align: center;">
+        <p>Chargement des cartes...</p>
+    </div>
+
+    <!-- Conteneur pour les cartes -->
+    <div class="container"></div>
+
+    <script>
+        async function fetchAndDisplayCards() {
+            const loadingIndicator = document.getElementById('loading');
+            const container = document.querySelector('.container');
+            loadingIndicator.style.display = 'block';
+
+            try {
+                // Charger le fichier JSON contenant les cartes
+                const response = await fetch('PokemonDB.json');
+                if (!response.ok) {
+                    throw new Error("Erreur lors du chargement des cartes.");
+                }
+                const cards = await response.json();
+
+                console.log(cards);  // Pour déboguer et vérifier si les cartes sont récupérées
+
+                // Organiser les cartes par série
+                const seriesMap = {};
+                cards.forEach(card => {
+                    if (!seriesMap[card.series]) {
+                        seriesMap[card.series] = [];
+                    }
+                    seriesMap[card.series].push(card);
+                });
+
+                // Afficher les cartes par série
+                for (const series in seriesMap) {
+                    const seriesSection = document.createElement('div');
+                    seriesSection.classList.add('series');
+
+                    const seriesTitle = document.createElement('h2');
+                    seriesTitle.textContent = series;
+                    seriesSection.appendChild(seriesTitle);
+
+                    const cardsContainer = document.createElement('div');
+                    cardsContainer.classList.add('cards');
+
+                    seriesMap[series].forEach(card => {
+                        const cardElement = document.createElement('div');
+                        cardElement.classList.add('card');
+                        cardElement.innerHTML = `
+                                <img src="${card.image_url}" alt="${card.name}">
+                                <h3>${card.name}</h3>
+                                <p>Rareté: ${card.rarity}</p>
+                                <p>Prix: ${card.estimated_price} €</p>
+                            `;
+                        cardsContainer.appendChild(cardElement);
+                    });
+
+                    seriesSection.appendChild(cardsContainer);
+                    container.appendChild(seriesSection);
+                }
+            } catch (error) {
+                container.innerHTML = `<p style="color: red; text-align: center;">Erreur : ${error.message}</p>`;
+            } finally {
+                loadingIndicator.style.display = 'none';
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', fetchAndDisplayCards);
+    </script>
+
+</main>
+</div>
+
+</body>
+</html>

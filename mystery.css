@@ -1,0 +1,97 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #2c2c2c; /* Fond sombre pour faire ressortir les éléments */
+    background-image: url('quizz.jpg'); /* Image de fond */
+    background-size: cover; /* Couvre toute la zone du body */
+    background-position: center; /* Centrer l'image */
+    background-repeat: no-repeat; /* Empêcher la répétition de l'image */
+    color: #f60e68; /* Texte blanc pour un bon contraste avec le fond sombre */
+    margin: 0; /* Supprimer l'espacement par défaut */
+    display: flex;
+    justify-content: center; /* Centrer tout le contenu horizontalement */
+    align-items: center; /* Centrer verticalement */
+    height: 100vh; /* Utiliser toute la hauteur de la fenêtre */
+}
+
+#left-container {
+    width: 50%; /* Prendre la moitié gauche de la page */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centrer les éléments horizontalement */
+    justify-content: center; /* Centrer verticalement */
+    position: relative;
+}
+
+#pokemon-container img {
+    width: 200px;
+    height: 200px;
+    filter: blur(10px); /* Pokémon caché */
+    margin-bottom: 20px; /* Espacement sous l'image */
+
+    left: 50%; /* Déplacement de l'image au centre de la moitié gauche */
+    transform: translateX(-140%); /* Centrer l'image horizontalement dans la moitié gauche */
+}
+
+.choice-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #ff7300; /* Rouge lumineux, proche du fluo */
+    border: 2px solid #ff0062; /* Bordure rouge lumineux */
+    color: #ffffff; /* Texte en blanc pour un bon contraste */
+    display: inline-block; /* Aligner les boutons horizontalement */
+    border-radius: 8px; /* Coins arrondis pour un effet moderne */
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease; /* Effets au survol */
+    left: 60%; /* Déplacement de l'image au centre de la moitié gauche */
+    transform: translateX(-320%); /* Centrer l'image horizontalement dans la moitié gauche */
+    width: 100px; /* Ajuste la largeur des boutons */
+}
+
+.choice-btn:hover {
+    background-color: #ffb300; /* Jaune-orangé fluo au survol pour l'effet lumineux */
+
+    box-shadow: 0 0 10px #ffb300, 0 0 20px #ffb300; /* Ombre lumineuse qui fait ressortir le bouton */
+}
+
+#new-game {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #fa642b; /* Rouge lumineux, proche du fluo */
+    border: none;
+    cursor: pointer;
+    color: #ffffff; /* Texte blanc */
+    font-size: 18px;
+    border-radius: 8px; /* Coins arrondis */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Transition fluide */
+    left: 60%; /* Déplacement de l'image au centre de la moitié gauche */
+    transform: translateX(-180%); /* Centrer l'image horizontalement dans la moitié gauche */
+}
+
+#new-game:hover {
+    background-color: #ffb300; /* Jaune-orangé fluo au survol */
+    box-shadow: 0 0 10px #ffb300, 0 0 20px #ffb300; /* Ombre lumineuse au survol */
+}
+
+#pokemon-img {
+    max-width: 500px;
+    margin: auto;
+    display: block;
+    transition: filter 0.3s ease;
+}
+
+#choices {
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-start; /* Aligner les boutons à gauche */
+    align-items: center;
+    gap: 10px; /* Ajouter un espace de 20px entre les boutons */
+    flex-wrap: wrap; /* Gérer les éléments en plusieurs lignes si besoin */
+}
+
+#pokemon-img.blackout {
+    filter: brightness(0) sepia(1);  /* Image noire avec un effet de saturation */
+}
+

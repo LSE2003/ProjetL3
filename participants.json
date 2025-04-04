@@ -1,0 +1,17 @@
+[
+  { "nom": "Sacha", "score": 350, "image": "https://i.postimg.cc/QxnRPHfG/ash.jpg" },
+  { "nom": "Ondine", "score": 340.50, "image": "https://i.postimg.cc/QVZCQhHH/ondine.jpg" },
+  { "nom": "Leon", "score": 325.15, "image": "https://i.postimg.cc/tR35Y57C/leon.jpg" },
+  { "nom": "Pierre", "score": 308, "image": "https://i.postimg.cc/QCq4Zgvm/pierre.png" },
+  { "nom": "Régis", "score": 299, "image": "https://i.postimg.cc/X7tRcW9k/regis.jpg" },
+  { "nom": "Cynthia", "score": 285, "image": "https://i.postimg.cc/sgvpyFLq/cynthia.png" },
+  { "nom": "Red", "score": 270, "image": "https://i.postimg.cc/yxTYwdB9/red.jpg" },
+  { "nom": "Blue", "score": 250, "image": "https://i.postimg.cc/BQ6XdTLn/blue.jpg" },
+  { "nom": "Silver", "score": 230, "image": "https://i.postimg.cc/pVn28sF8/silver.jpg" },
+  { "nom": "Gold", "score": 210, "image": "https://i.postimg.cc/J7KQNQCr/gold.jpg" },
+  { "nom": "Brice", "score": 190, "image": "https://i.postimg.cc/RCfW9SGj/brice.jpg" },
+  { "nom": "Flora", "score": 170, "image": "img12.png" },
+  { "nom": "Aurore", "score": 160, "image": "img13.png" },
+  { "nom": "Paul", "score": 150, "image": "img14.png" },
+  { "nom": "Gladio", "score": 140, "image": "img15.png" }
+]

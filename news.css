@@ -1,0 +1,93 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    background-image: url("télécharger.png");
+    background-repeat: repeat;
+    background-size: contain;
+}
+
+h1 {
+    text-align: center;
+    color: #000000;
+    padding: 20px;
+    background-color: #ffffff;
+    margin-bottom: 30px;
+}
+
+.annonce-container {
+    margin: 20px;
+
+}
+
+.annonce {
+    background: white;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 80%;  /* Optional, controls max width */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    margin-left: auto;
+    margin-right: auto; /* Centers the content */
+}
+
+.annonce:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+.annonce img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.annonce h2 {
+    color: #ff6600;
+    margin-top: 15px;
+}
+
+.annonce .date {
+    color: #888;
+    font-size: 0.9em;
+    margin-bottom: 10px;
+}
+
+.annonce .description {
+    color: #333;
+    font-size: 1em;
+}
+
+.annonce .badge {
+    display: inline-block;
+    background-color: #ff6600;
+    color: white;
+    padding: 3px 10px;
+    font-size: 0.9em;
+    border-radius: 15px;
+    margin-top: 10px;
+}
+.logo {
+    width: 60px;
+    height: 60px;
+    animation: logoSpin 8s linear infinite;
+}
+
+/* Animation du logo */
+@keyframes logoSpin {
+    0% {
+        transform: rotate(0deg);
+        filter: drop-shadow(0 0 10px #ff0000); /* Effet de lueur au départ */
+    }
+    50% {
+        filter: drop-shadow(0 0 20px #ffcc00); /* Transition vers une lueur jaune */
+    }
+    100% {
+        transform: rotate(360deg);
+        filter: drop-shadow(0 0 10px #ff0000); /* Retour au rouge */
+    }
+}

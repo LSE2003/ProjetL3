@@ -1,0 +1,113 @@
+/* Style global */
+body {
+    font-family: 'Roboto', sans-serif; /* Utilisation d'une police moderne */
+    background-color: #f4f4f9; /* Couleur de fond douce pour toute la page */
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: #333; /* Couleur de texte générale */
+}
+
+/* En-tête */
+header {
+    background-color: #ff0066; /* Couleur rouge vif pour l'en-tête */
+    padding: 20px 0;
+    color: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Ajout d'une ombre portée */
+}
+
+h1 {
+    font-size: 2.5em;
+    margin: 0;
+    font-family: 'Lobster', cursive; /* Police élégante et distincte pour le titre */
+    letter-spacing: 2px; /* Espacement des lettres pour un effet d'élégance */
+}
+
+/* Sections des événements */
+#upcoming-events, #past-events {
+    margin: 40px auto;
+    width: 90%; /* Plus large, mais avec des marges */
+    max-width: 1200px;
+}
+
+/* Style des événements */
+.event, .past-event {
+    background-color: #fff; /* Fond blanc pour plus de lisibilité */
+    border: 1px solid #ff0066; /* Bordure plus subtile mais visible */
+    padding: 20px;
+    width: 80%;
+    margin: 15px auto;
+    border-radius: 15px; /* Bords arrondis pour plus de douceur */
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); /* Ombre subtile autour des événements */
+    transition: all 0.3s ease; /* Effet de transition au survol */
+}
+
+.event:hover, .past-event:hover {
+    transform: translateY(-5px); /* Légère élévation au survol */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Ombre plus marquée pour un effet interactif */
+}
+
+/* Style des titres d'événements */
+.event h3, .past-event h3 {
+    color: #ff0066;
+    font-size: 1.8em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Liens */
+a {
+    text-decoration: none;
+    color: #ff0066;
+    font-weight: bold;
+    transition: color 0.3s ease; /* Effet de transition au survol */
+}
+
+a:hover {
+    color: #cc0055; /* Lien plus foncé au survol */
+}
+
+/* Footer */
+footer {
+    background-color: #ff0066;
+    padding: 15px;
+    color: white;
+    font-size: 1.1em;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Section des événements à venir (id) */
+#upcoming-events h2, #past-events h2 {
+    font-size: 2rem;
+    color: #ff0066;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+/* Ajout de la section favoris pour les événements */
+.favorite-btn {
+    background-color: #ff0066;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.favorite-btn:hover {
+    background-color: #cc0055; /* Changement de couleur au survol */
+}
+
+.favorite-btn:focus {
+    outline: none; /* Enlever le focus par défaut */
+}
+
+.favorite-btn.active {
+    background-color: #00cc66; /* Changement de couleur lorsque l'événement est favori */
+}

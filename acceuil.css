@@ -1,0 +1,125 @@
+/* Style global pour toutes les pages */
+body {
+    margin: 0;
+    font-family: 'Poppins', Arial, sans-serif;
+    background: url('fond.jpg') no-repeat center center fixed;
+    background-size: cover; /* L'image occupe tout l'écran */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    position: relative; /* Pour pouvoir superposer l'élément ::before */
+    }
+
+
+
+body::before {
+    content: ''; /* Nécessaire pour afficher un pseudo-élément */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7); /* Fond sombre avec opacité */
+    z-index: -1; /* Placer l'overlay sous tout le contenu */
+}
+
+/* En-tête */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 15px 30px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+    z-index: 10;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.logo {
+    width: 60px;
+    height: 60px;
+    animation: logoSpin 8s linear infinite;
+}
+
+/* Animation du logo */
+@keyframes logoSpin {
+    0% {
+        transform: rotate(0deg);
+        filter: drop-shadow(0 0 10px #ff0000); /* Effet de lueur au départ */
+    }
+    50% {
+        filter: drop-shadow(0 0 20px #ffcc00); /* Transition vers une lueur jaune */
+    }
+    100% {
+        transform: rotate(360deg);
+        filter: drop-shadow(0 0 10px #ff0000); /* Retour au rouge */
+    }
+}
+
+/* Contenu principal */
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 1000px;
+    background: rgba(255, 255, 255, 0.8); /* Un fond léger pour le contenu */
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6);
+}
+
+main h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    font-weight: 600;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+main p {
+    font-size: 1rem;
+    line-height: 1.5;
+    max-width: 700px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ddd;
+}
+
+/* Bouton d'appel à l'action */
+.cta-button {
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    border: 1px solid white;
+    padding: 8px 16px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.cta-button:hover {
+    background: rgba(147, 12, 73, 0.88);
+    color: black;
+}
+
+/* Pied de page */
+footer {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    text-align: center;
+    font-size: 0.8rem;
+    color: #aaa;
+}
+
+footer p {
+    margin: 0;
+}

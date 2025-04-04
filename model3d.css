@@ -1,0 +1,348 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.logo {
+    width: 60px;
+    height: 60px;
+    animation: logoSpin 8s linear infinite;
+}
+
+
+/* Bouton d'appel à l'action */
+.cta-button {
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    border: 1px solid white;
+    padding: 8px 16px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.cta-button:hover {
+    background: rgba(147, 12, 73, 0.88);
+    color: black;
+}
+
+
+/* 🌟 Barre de navigation améliorée */
+.nav-bar {
+    position: fixed;
+    top: 0;
+    left: -270px; /* Cachée au début */
+    width: 250px;
+    height: auto;
+    background: linear-gradient(135deg, rgba(51, 51, 51, 0.9), rgba(0, 0, 0, 0.8)); /* Dégradé sombre */
+    backdrop-filter: blur(10px); /* Effet flou */
+    box-shadow: 4px 0 10px rgba(0, 0, 0, 0.5); /* Ombre */
+    padding: 20px;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    transition: left 0.5s ease-in-out; /* Animation fluide */
+}
+
+/* 🌟 Effet d'apparition */
+.nav-bar.active {
+    left: 0;
+}
+
+/* 🌟 Style des liens */
+.nav-bar a {
+    display: block;
+    color: #FFFF00; /* Jaune Fluo */
+    text-decoration: none;
+    margin: 15px 0;
+    font-size: 1.3rem;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif; /* Police moderne */
+    padding: 10px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+/* 🌟 Ajout d'icônes avant chaque lien */
+.nav-bar a::before {
+    content: "⭐"; /* Icône personnalisée (changer selon le besoin) */
+    margin-right: 10px;
+    font-size: 1.2rem;
+}
+
+/* 🌟 Effet de survol */
+.nav-bar a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #FF0000; /* Rouge */
+    transform: scale(1.05);
+}
+
+/* 🌟 Effet lors de la sélection */
+.nav-bar a.active {
+    background-color: #FF0000;
+    color: white;
+    transform: scale(1.1);
+}
+
+/* 🌟 Menu hamburger */
+.menu-btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 35px;
+    height: 30px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 1100;
+}
+
+.menu-btn .bar {
+    width: 100%;
+    height: 4px;
+    background-color: rgba(216, 153, 241, 0.56);
+    border-radius: 2px;
+    transition: all 0.3s;
+}
+
+/* 🌟 Icône hamburger animée */
+.nav-bar.active + .menu-btn .bar:nth-child(1) {
+    transform: rotate(45deg) translate(6px, 6px);
+}
+
+.nav-bar.active + .menu-btn .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.nav-bar.active + .menu-btn .bar:nth-child(3) {
+    transform: rotate(-45deg) translate(6px, -6px);
+}
+
+/* 🌟 Affichage adaptatif */
+@media (max-width: 768px) {
+    .menu-btn {
+        display: flex;
+    }
+}
+
+
+@keyframes backgroundAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Animation du logo */
+@keyframes logoSpin {
+    0% {
+        transform: rotate(0deg);
+        filter: drop-shadow(0 0 10px #ff0000); /* Effet de lueur au départ */
+    }
+    50% {
+        filter: drop-shadow(0 0 20px #ffcc00); /* Transition vers une lueur jaune */
+    }
+    100% {
+        transform: rotate(360deg);
+        filter: drop-shadow(0 0 10px #ff0000); /* Retour au rouge */
+    }
+}
+
+
+header {
+    text-align: center;
+    color: #ad0808; /* Texte en blanc pour contraster */
+
+    background-size: cover;
+    padding: 20px 0; /* Ajoute un peu d'espace autour du texte */
+    transition: opacity ease-in-out 0.5s;
+}
+
+header:hover{
+    opacity: 0.6;
+}
+
+header a {
+    position: absolute;
+    left: 20px; /* Positionne "Home" à gauche */
+}
+
+header a:hover {
+    position: absolute;
+    left: 20px; /* Positionne "Home" à gauche */
+    cursor: pointer;
+}
+
+
+
+section {
+    height: 100vh; /* Chaque section prend 100% de la hauteur de l'écran */
+    display: flex;
+    /*align-items: center;
+    justify-content: center;*/
+    text-align: center;
+    font-size: 2rem;
+}
+
+.premSection {
+    background: rgb(207,35,61);
+    background: linear-gradient(101deg, rgba(207,35,61,1) 0%, rgba(237,148,29,1) 47%, rgba(233,244,8,1) 100%);
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.presentation {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 800px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.presentation h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.presentation p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+
+
+.impo {
+    display: inline-block;
+    color: #7d0707;
+    text-transform: uppercase;
+    transition: transform 0.3s ease, color 0.3s ease;
+    transform: translateY(0);
+}
+.impo:hover {
+    transform: translateY(-5px); /* ajustez la valeur selon vos besoins */
+}
+
+.contenu {
+    display: flex;
+    height: 100vh; /* Prend toute la hauteur de l'écran */
+}
+
+.carte {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.pres {
+    width: 50%;/* Prend 50% de la largeur */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Garde le texte centré verticalement */
+
+    text-align: left; /* Aligne le texte à gauche */
+    background-color: #fff; /* Fond blanc */
+    padding: 20px;
+
+}
+
+.descri{
+    align-items: flex-start; /* Aligne le contenu à gauche */
+    font-size: 20px;
+    line-height: 1.7;
+    font-family: Century;
+}
+
+.nomCarte {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 2px; /* Espacement des lettres */
+    margin: 0px 0px 40px 0px;
+    position: relative;
+    color: #333;
+    overflow: hidden; /* Cache le texte qui dépasse au début de l'animation */
+    white-space: nowrap; /* Empêche le texte de passer à la ligne */
+    border-right: 4px solid #ff5733; /* Crée un curseur comme une machine à écrire */
+    width: 0; /* Commence avec une largeur de 0 */
+    animation: typing 3s steps(30) 1s forwards, blink 0.75s step-end infinite; /* Animation */
+}
+
+/* Animation de la machine à écrire */
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+/* Animation du curseur qui clignote */
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+/* Effets appliqués à la classe .val */
+.val {
+    display: inline-block;
+    color: #ff5733; /* Orange vif */
+    font-weight: bold;
+    text-transform: uppercase;
+    position: relative;
+    transition: all 0.3s ease-in-out; /* Animation fluide */
+}
+
+.val::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 4px; /* Épaisseur de la ligne */
+    background-color: #ff5733;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.val:hover::before {
+    transform: scaleX(1); /* Surlignage au survol */
+    transform-origin: bottom left;
+}
+
+.val:hover {
+    transform: translateY(-5px); /* Effet de déplacement */
+}
+
+#pikaC{
+    background-color: orange;
+}
+

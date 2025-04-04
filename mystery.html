@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carte Mystère</title>
+    <script src="mystery.js"></script>
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="mystery.css">
+    <div id="fireworks-container"></div>
+</head>
+<body>
+<nav id="navbarContainer"></nav>
+<script src="navbar.js" defer></script>
+
+<main>
+    <h1>Qui est ce Pokémon ?</h1>
+    <div id="pokemon-container">
+        <img id="pokemon-img" src="fond.jpg" alt="Pokémon mystère" class="blurred">
+    </div>
+
+    <div id="choices">
+        <button class="choice-btn"></button>
+        <button class="choice-btn"></button>
+        <button class="choice-btn"></button>
+    </div>
+
+    <p id="result-message"></p>
+    <button id="new-game">Nouvelle Carte</button>
+</main>
+</body>
+</html>

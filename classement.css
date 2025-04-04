@@ -1,0 +1,176 @@
+/* Réinitialisation des styles de base */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Nunito", sans-serif;
+}
+
+/* Mise en page globale */
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column; /* Empile les éléments verticalement */
+    justify-content: flex-start; /* L'alignement se fait au début */
+    align-items: center; /* Centre horizontalement */
+    background: #fafafe;
+    padding-top: 3rem; /* Espacement pour le header */
+    counter-reset: list;
+}
+
+/* Header */
+.main-header {
+    background: linear-gradient(135deg, #6e7dff, #5b5be6);
+    width: 100%;
+    padding: 3rem 0;
+    text-align: center;
+    color: white;
+    border-bottom: 3px solid #4949bd;
+}
+
+.main-header .container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.main-header h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.main-header p {
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+/* Conteneur du leaderboard */
+.leaderboard {
+    width: 90%;
+    max-width: 500px;
+    background: #fff;
+    border-radius: 0.2rem;
+    padding: 2rem 0;
+    box-shadow: 0 0.5rem 1rem #5b5be638;
+    position: relative;
+    text-align: center;
+    margin-top: 2rem; /* Réduit l'espacement au-dessus du leaderboard */
+}
+
+/* Titre du classement */
+h2 {
+    margin-left: 2rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Liste des participants */
+ol {
+    margin-top: 2rem;
+    list-style: none;
+}
+
+/* Style des participants */
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+    font-weight: 700;
+    opacity: 0.8;
+    transition: background 0.3s ease-in-out;
+}
+
+/* Numérotation automatique */
+li::before {
+    counter-increment: list;
+    content: counter(list);
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+/* Nom du participant */
+.nom {
+    margin: 0;
+}
+
+/* Alignement de l'image et du nom à gauche */
+.player-info {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+/* Images des participants */
+img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+
+/* Alignement du score à droite */
+.score {
+    font-weight: 700;
+    margin-left: auto;
+}
+
+/* Alternance des couleurs de fond */
+li:nth-of-type(odd) {
+    background: #f3f3f3;
+}
+
+li:hover {
+    background: #5050d8;
+    color: #fff;
+    opacity: 1;
+    font-weight: bold;
+    box-shadow: 0 0.2rem 0.5rem #79798e;
+    transform: scale(1);
+    height: 90px;
+}
+
+/* Style des médailles */
+.award {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+/* Conteneur des boutons */
+.buttons-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+/* Style général des boutons */
+button {
+    cursor: pointer;
+    border: none;
+    font-weight: 700;
+    padding: 0.5rem 1rem;
+    letter-spacing: 0.5px;
+    transition: 0.3s ease-in-out;
+}
+
+/* Bouton Continue */
+.continue {
+    background: #5b5be6;
+    color: #fff;
+    border-radius: 1rem;
+    box-shadow: 0 0.2rem #4949bd;
+    position: relative;
+}
+
+.continue:hover {
+    box-shadow: none;
+    top: 0.1rem;
+}
+
+/* Masquer les éléments non visibles */
+.hidden {
+    display: none;
+}

@@ -1,0 +1,139 @@
+/* Fond animé avec un dégradé de bleu et turquoise */
+@keyframes oceanAnimation {
+  0% {
+    background: linear-gradient(45deg, #00bfff, #1e90ff, #20b2aa);
+  }
+  25% {
+    background: linear-gradient(45deg, #1e90ff, #00bfff, #4682b4);
+  }
+  50% {
+    background: linear-gradient(45deg, #20b2aa, #1e90ff, #5f9ea0);
+  }
+  75% {
+    background: linear-gradient(45deg, #4682b4, #20b2aa, #1e90ff);
+  }
+  100% {
+    background: linear-gradient(45deg, #00bfff, #4682b4, #20b2aa);
+  }
+}
+
+
+/* En-tête stylisé avec une légère ombre et du texte blanc */
+header {
+  background: rgba(0, 191, 255, 0.8); /* Semi-transparent pour laisser voir le fond */
+  padding: 30px 20px; /* Plus d'espace pour un effet plus aéré */
+  text-align: center;
+  color: white;
+  border-bottom: 3px solid #1e90ff;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Ombre plus marquée */
+  font-size: 2.5rem; /* Augmenter la taille du texte pour plus d'impact */
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5); /* Ombre du texte plus marquée */
+  font-family: 'Arial', sans-serif; /* Police sans-serif, mais peut être changée pour une police personnalisée */
+  animation: fadeInHeader 1s ease-out; /* Animation subtile pour l'apparition */
+  transition: background 0.3s ease, transform 0.3s ease; /* Transition pour le fond et les effets de survol */
+}
+
+header:hover {
+  background: rgba(0, 191, 255, 1); /* Changer l'arrière-plan au survol */
+  transform: translateY(-5px); /* Un léger effet de levée au survol */
+}
+
+/* Animation d'apparition de l'en-tête */
+@keyframes fadeInHeader {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+body.recherche-page {
+  animation: oceanAnimation 10s ease-in-out infinite;
+  background-size: 400% 400%;
+  min-height: 100vh;
+  font-family: 'Arial', sans-serif;
+  color: #22c7d6;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Aligner tout en haut de la page */
+  align-items: center;
+  padding: 0 15px; /* Un peu de marge pour ne pas coller les bords */
+}
+
+/* Pour la barre de recherche */
+.search-bar {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 50px;
+  padding: 10px 20px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px; /* Limiter la largeur de la barre de recherche */
+}
+
+/* Résultats de la recherche - Assurez-vous qu'ils sont correctement affichés sous la barre de recherche */
+#search-results {
+  margin-top: 30px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* Permet aux cartes de s'organiser en plusieurs lignes si nécessaire */
+  gap: 20px; /* Un peu d'espace entre les cartes */
+}
+
+.card {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 2px solid #00bfff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  margin: 10px;
+  width: 250px;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-bottom: 2px solid #00bfff;
+}
+
+.card-body {
+  padding: 15px;
+  background-color: #f0f8ff;
+}
+
+.card-body h5 {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #1e90ff;
+}
+
+.card-body p {
+  font-size: 1.1rem;
+  color: #333;
+}
+
+/* Animation flottante des cartes */
+@keyframes floatUp {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}

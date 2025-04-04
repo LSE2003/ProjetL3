@@ -1,0 +1,339 @@
+[
+  {
+    "id": 1,
+    "name": "Charme d'Atalante",
+    "series": "Étincelle Définitive",
+    "rarity": "Ultra Rare",
+    "grade": "Mint",
+    "estimated_price": 200.00,
+    "image_url": "https://pokecardex.b-cdn.net/assets/images/sets/SSP/HD/246.jpg?class=hd",
+    "description": "Une carte étincelante issue de la série Étincelle Définitive."
+  },
+  {
+    "id": 2,
+    "name": "Latias",
+    "series": "Étincelle Définitive",
+    "rarity": "Rare",
+    "grade": "Near Mint",
+    "estimated_price": 150.00,
+    "image_url": "https://pokecardex.b-cdn.net/assets/images/sets/SSP/HD/239.jpg?class=hd",
+    "description": "Latias, célèbre Pokémon Dragon de la série Étincelle Définitive."
+  },
+  {
+    "id": 3,
+    "name": "Latios",
+    "series": "Étincelle Définitive",
+    "rarity": "Rare",
+    "grade": "Near Mint",
+    "estimated_price": 140.00,
+    "image_url": "https://pokecardex.b-cdn.net/assets/images/sets/SSP/HD/203.jpg?class=hd",
+    "description": "Latios, frère de Latias, de la série Étincelle Définitive."
+  },
+  {
+    "id": 4,
+    "name": "Malvalame",
+    "series": "Étincelle Définitive",
+    "rarity": "Special Rare",
+    "grade": "Mint",
+    "estimated_price": 180.00,
+    "image_url": "https://pokecardex.b-cdn.net/assets/images/sets/SSP/HD/197.jpg?class=hd",
+    "description": "Malvalame, Pokémon mystérieux de la série Étincelle Définitive."
+  },
+  {
+    "id": 5,
+    "name": "Milobellus",
+    "series": "Étincelle Définitive",
+    "rarity": "Rare",
+    "grade": "Mint",
+    "estimated_price": 170.00,
+    "image_url": "https://pokecardex.b-cdn.net/assets/images/sets/SSP/HD/237.jpg?class=hd",
+    "description": "Milobellus, Pokémon élégant de la série Étincelle Définitive."
+  },
+  {
+    "id": 6,
+    "name": "Noadkoko D'Alola",
+    "series": "Étincelle Définitive",
+    "rarity": "Rare",
+    "grade": "Near Mint",
+    "estimated_price": 160.00,
+    "image_url": "https://pokecardex.b-cdn.net/assets/images/sets/SSP/HD/248.jpg?class=hd",
+    "description": "Noadkoko d'Alola, version exotique de ce Pokémon de la série Étincelle Définitive."
+  },
+  {
+    "id": 7,
+    "name": "Pikachu",
+    "series": "Étincelle Définitive",
+    "rarity": "Special Rare",
+    "grade": "Mint",
+    "estimated_price": 180.00,
+    "image_url": "https://pokecardex.b-cdn.net/assets/images/sets/SSP/HD/238.jpg?class=hd",
+    "description": "Pikachu, version étincelante issue de la série Étincelle Définitive."
+  },
+  {
+    "id": 8,
+    "name": "Dracaufeu",
+    "series": "151",
+    "rarity": "Mythic Rare",
+    "grade": "Gem Mint",
+    "estimated_price": 2500.00,
+    "image_url": "https://pokecardex.b-cdn.net/assets/images/sets/MEW/HD/199.jpg?class=hd",
+    "description": "Carte extrêmement recherchée de Dracaufeu, série 151."
+  },
+  {
+    "id": 9,
+    "name": "Tortank",
+    "series": "151",
+    "rarity": "Ultra Rare",
+    "grade": "Near Mint",
+    "estimated_price": 1000.00,
+    "image_url": "https://pokecardex.b-cdn.net/assets/images/sets/MEW/200.jpg?class=sd",
+    "description": "Carte iconique de Tortank de la série 151."
+  },
+  {
+    "id": 10,
+    "name": "Carapuce",
+    "series": "151",
+    "rarity": "Rare",
+    "grade": "Lightly Played",
+    "estimated_price": 500.00,
+    "image_url": "https://pokecardex.b-cdn.net/assets/images/sets/MEW/170.jpg?class=sd",
+    "description": "Carapuce, l'évolution de base de Tortank, série 151."
+  },
+  {
+    "id": 11,
+    "name": "Salamèche",
+    "series": "151",
+    "rarity": "Rare",
+    "grade": "Near Mint",
+    "estimated_price": 450.00,
+    "image_url": "https://pokecardex.b-cdn.net/assets/images/sets/MEW/168.jpg?class=sd",
+    "description": "Salamèche, Pokémon de base de Dracaufeu, série 151."
+  },
+  {
+    "id": 12,
+    "name": "Électhor",
+    "series": "151",
+    "rarity": "Legendary Rare",
+    "grade": "Mint",
+    "estimated_price": 700.00,
+    "image_url": "https://pokecardex.b-cdn.net/assets/images/sets/MEW/202.jpg?class=sd",
+    "description": "Électhor, un des trois oiseaux légendaires de la série 151."
+  },
+  {
+    "id": 13,
+    "name": "Lunala",
+    "series": "Soleil et Lune",
+    "rarity": "Legendary Rare",
+    "grade": "Mint",
+    "estimated_price": 800.00,
+    "image_url": "https://pokecardex.b-cdn.net/assets/images/sets/SM01/HD/153.jpg?class=hd",
+    "description": "Lunala, le Pokémon légendaire de la Lune, de la série Soleil et Lune."
+  },
+  {
+    "id": 14,
+    "name": "Solgaleo",
+    "series": "Soleil et Lune",
+    "rarity": "Legendary Rare",
+    "grade": "Mint",
+    "estimated_price": 950.00,
+    "image_url": "https://pokecardex.b-cdn.net/assets/images/sets/SM01/143.jpg?class=sd",
+    "description": "Solgaleo, le Pokémon légendaire du Soleil, de la série Soleil et Lune."
+  },
+  {
+    "id": 15,
+    "name": "Noivern",
+    "series": "Soleil et Lune",
+    "rarity": "Rare",
+    "grade": "Near Mint",
+    "estimated_price": 100.00,
+    "image_url": "https://pokecardex.b-cdn.net/assets/images/sets/SM03/160.jpg?class=sd",
+    "description": "Noivern, un Pokémon de type Vol et Dragon, de la série Soleil et Lune."
+  },
+  {
+    "id": 16,
+    "name": "Tapu Koko",
+    "series": "Soleil et Lune",
+    "rarity": "Mythic Rare",
+    "grade": "Gem Mint",
+    "estimated_price": 1200.00,
+    "image_url": "https://pokecardex.b-cdn.net/assets/images/sets/WC17/80.jpg?class=sd",
+    "description": "Tapu Koko, un des Pokémon légendaires de type Fée et Électrik, de la série Soleil et Lune."
+  },
+  {
+    "id": 17,
+    "name": "Mimikyu",
+    "series": "Soleil et Lune",
+    "rarity": "Rare",
+    "grade": "Near Mint",
+    "estimated_price": 300.00,
+    "image_url": "soleilEtLune/Mimikyu_132_R.jpg",
+    "description": "Mimikyu, Pokémon mystérieux de type Spectre et Fée, très populaire dans la série Soleil et Lune."
+  },
+  {
+    "id": 18,
+    "name": "Snorlax",
+    "series": "Soleil et Lune",
+    "rarity": "Rare",
+    "grade": "Lightly Played",
+    "estimated_price": 150.00,
+    "image_url": "https://pokecardex.b-cdn.net/assets/images/sets/PRZP/98.jpg?class=sd",
+    "description": "Snorlax, le Pokémon de type Normal très populaire et paresseux de la série Soleil et Lune."
+  },
+  {
+    "id": 19,
+    "name": "Incineroar",
+    "series": "Soleil et Lune",
+    "rarity": "Ultra Rare",
+    "grade": "Mint",
+    "estimated_price": 400.00,
+    "image_url": "https://pokecardex.b-cdn.net/assets/images/sets/JUMBO/HD/325.jpg?class=hd",
+    "description": "Incineroar, le Pokémon de type Feu et Ténèbres, évolution de Litten dans la série Soleil et Lune."
+  },
+    {
+      "id": 20,
+      "name": "Charizard",
+      "series": "XY - Générations",
+      "rarity": "Mythic Rare",
+      "grade": "Mint",
+      "estimated_price": 2000.00,
+      "image_url": "https://pokecardex.b-cdn.net/assets/images/sets/SK/146.jpg?class=sd",
+      "description": "Charizard, l'un des Pokémon les plus iconiques de la première génération, dans la série XY - Générations."
+    },
+    {
+      "id": 21,
+      "name": "Pikachu",
+      "series": "XY - Générations",
+      "rarity": "Special Rare",
+      "grade": "Near Mint",
+      "estimated_price": 800.00,
+      "image_url": "https://pokecardex.b-cdn.net/assets/images/sets/PAF/131.jpg?class=sd",
+      "description": "Pikachu, le Pokémon emblématique de la franchise, de la série XY - Générations."
+    },
+    {
+      "id": 22,
+      "name": "Eevee",
+      "series": "XY - Générations",
+      "rarity": "Rare",
+      "grade": "Lightly Played",
+      "estimhated_price": 300.00,
+      "image_url": "https://pokecardex.b-cdn.net/assets/images/sets/LMN5/133.jpg?class=sd",
+      "description": "Eevee, le Pokémon adorable avec plusieurs évolutions, série XY - Générations."
+    },
+    {
+      "id": 23,
+      "name": "Pyrou",
+      "series": "XY - Générations",
+      "rarity": "Rare",
+      "grade": "Near Mint",
+      "estimated_price": 250.00,
+      "image_url": "https://pokecardex.b-cdn.net/assets/images/sets/LMN5/HD/136.jpg?class=hd",
+      "description": "Pyrou, l'une des évolutions d'Eevee, de la série XY - Générations."
+    },
+    {
+      "id": 24,
+      "name": "Blastoise",
+      "series": "XY - Générations",
+      "rarity": "Mythic Rare",
+      "grade": "Mint",
+      "estimated_price": 1800.00,
+      "image_url": "https://pokecardex.b-cdn.net/assets/images/sets/JUMBO/HD/162.jpg?class=hd",
+      "description": "Blastoise, l'une des évolutions finales des Pokémon de départ de la première génération."
+    },
+    {
+      "id": 25,
+      "name": "Mew",
+      "series": "XY - Générations",
+      "rarity": "Legendary Rare",
+      "grade": "Gem Mint",
+      "estimated_price": 3000.00,
+      "image_url": "https://pokecardex.b-cdn.net/assets/images/sets/MEW/151.jpg?class=sd",
+      "description": "Mew, le Pokémon légendaire et mystique, dans la série XY - Générations."
+    },
+    {
+      "id": 26,
+      "name": "Gardevoir",
+      "series": "XY - Générations",
+      "rarity": "Special Rare",
+      "grade": "Near Mint",
+      "estimated_price": 400.00,
+      "image_url": "https://pokecardex.b-cdn.net/assets/images/sets/PAF/29.jpg?class=sd",
+      "description": "Gardevoir, un Pokémon de type Psy et Fée, emblématique de la série XY - Générations."
+    },
+  [
+    {
+      "id": 27,
+      "name": "Torterra",
+      "series": "Diamant & Perle",
+      "rarity": "Rare",
+      "grade": "Mint",
+      "estimated_price": 450.00,
+      "image_url": "https://pokecardex.b-cdn.net/assets/images/sets/BRS/8.jpg?class=sd",
+      "description": "Torterra, l'une des évolutions finales des Pokémon de départ de la région Sinnoh."
+    },
+    {
+      "id": 28,
+      "name": "Infernape",
+      "series": "Diamant & Perle",
+      "rarity": "Ultra Rare",
+      "grade": "Near Mint",
+      "estimated_price": 500.00,
+      "image_url": "https://pokecardex.b-cdn.net/assets/images/sets/JUMBO/254.jpg?class=sd",
+      "description": "Infernape, l'évolution finale de Chimchar, Pokémon de type Feu et Combat."
+    },
+    {
+      "id": 29,
+      "name": "Empoleon",
+      "series": "Diamant & Perle",
+      "rarity": "Special Rare",
+      "grade": "Gem Mint",
+      "estimated_price": 600.00,
+      "image_url": "https://pokecardex.b-cdn.net/assets/images/sets/LTR/35.jpg?class=sd",
+      "description": "Empoleon, l'évolution finale de Piplup, Pokémon de type Eau et Acier."
+    },
+    {
+      "id": 30,
+      "name": "Dialga",
+      "series": "Diamant & Perle",
+      "rarity": "Legendary Rare",
+      "grade": "Mint",
+      "estimated_price": 1200.00,
+      "image_url": "DiamantPerle/Dialga_483_Legendary.jpg",
+      "description": "Dialga, le Pokémon légendaire de type Acier et Dragon, issu de la région Sinnoh."
+    },
+    {
+      "id": 31,
+      "name": "Palkia",
+      "series": "Diamant & Perle",
+      "rarity": "Legendary Rare",
+      "grade": "Near Mint",
+      "estimated_price": 1100.00,
+      "image_url": "https://pokecardex.b-cdn.net/assets/images/sets/PRSWSH/253.jpg?class=sd",
+      "description": "Palkia, le Pokémon légendaire de type Eau et Dragon, issu de la région Sinnoh."
+    },
+    {
+      "id": 32,
+      "name": "Lucario",
+      "series": "Diamant & Perle",
+      "rarity": "Special Rare",
+      "grade": "Gem Mint",
+      "estimated_price": 800.00,
+      "image_url": "https://pokecardex.b-cdn.net/assets/images/sets/SM10/126.jpg?class=sd",
+      "description": "Lucario, un Pokémon de type Combat et Acier, très apprécié des fans."
+    },
+    {
+      "id": 33,
+      "name": "Garchomp",
+      "series": "Diamant & Perle",
+      "rarity": "Ultra Rare",
+      "grade": "Mint",
+      "estimated_price": 750.00,
+      "image_url": "https://pokecardex.b-cdn.net/assets/images/sets/PRXY/167.jpg?class=sd",
+      "description": "Garchomp, un Pokémon de type Dragon et Sol, évolution de Gible, très puissant."
+    }
+  ]
+  ]
+
+
+
+
+

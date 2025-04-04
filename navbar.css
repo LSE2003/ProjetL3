@@ -1,0 +1,217 @@
+/* 🌟 Image de fond pour la barre de navigation */
+.nav-bar {
+    background: url("fondbarre.jpg") no-repeat center center;
+    background-size: cover; /* Pour que l'image couvre toute la largeur */
+    padding: 10px;
+    border-radius: 8px;
+    position: fixed; /* Position fixe */
+    left: -290px; /* Cachée à gauche */
+    top: 0;
+    width: 250px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: left 0.5s ease; /* Transition douce */
+    z-index: 1000; /* Assure qu'elle soit au-dessus */
+}
+
+/* 🌟 Apparition de la barre de navigation lorsqu'elle est active */
+.nav-bar.active {
+    left: 0; /* Déplacer la barre vers la droite */
+}
+
+/* 🌟 Icône ⚡ avant les liens */
+.nav-bar a::before {
+    content: "⚡"; /* Icône Pokémon */
+    margin-right: 8px;
+    font-size: 1rem;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* 🌟 Liens en jaune avec effet de survol */
+.nav-bar a {
+    display: block;
+    color: #FFD700; /* Jaune Pokémon */
+    text-decoration: none;
+    font-size: 1rem; /* Taille réduite */
+    font-weight: 500;
+    font-family: "Poppins", sans-serif;
+    padding: 8px;
+    margin: 8px 0;
+    border-radius: 4px;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+}
+
+/* 🌟 Effet de survol avec bleu fluorescent et effet électrique */
+.nav-bar a:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Légère couleur de fond */
+    color: #FFD700; /* Reste jaune Pokémon */
+    text-shadow: 0 0 8px #00FFFF, 0 0 15px #00FFFF; /* Glow bleu électrique */
+    transform: scale(1.1) rotate(5deg); /* Effet de rotation et agrandissement */
+    animation: electricEffect 1.2s infinite alternate; /* Animation d’effet électrique */
+}
+
+/* 🌟 Effet lorsqu'un lien est sélectionné */
+.nav-bar a.active {
+    background: rgba(117, 99, 99, 0.1); /* Fond doux */
+    color: white;
+    text-shadow: 0px 0px 10px #FFD700, 0px 0px 20px #FFD700; /* Glow jaune */
+    transform: scale(1.1);
+}
+
+/* 🌟 Animation d'effet électrique */
+@keyframes electricEffect {
+    0% {
+        text-shadow: 0 0 5px #00FFFF, 0 0 15px #00FFFF;
+        transform: scale(1.05) rotate(3deg);
+    }
+    50% {
+        text-shadow: 0 0 20px #00FFFF, 0 0 40px #00FFFF;
+        transform: scale(1.15) rotate(-3deg);
+    }
+    100% {
+        text-shadow: 0 0 5px #00FFFF, 0 0 10px #00FFFF;
+        transform: scale(1.05) rotate(3deg);
+    }
+}
+
+/* 🌟 Effet de vagues inactifs (avant le survol) */
+.nav-bar a::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("fondbarre.jpg");
+    background-size: cover;
+    transition: 0.6s;
+    transform: scaleX(0);
+    transform-origin: bottom;
+    z-index: -1;
+}
+
+.nav-bar a:hover::after {
+    transform: scaleX(1);
+}
+
+/* 🌟 Effet de survol sur l'icône ⚡ */
+.nav-bar a:hover::before {
+    transform: rotate(360deg); /* Icône tournante */
+}
+
+/* 🌟 Style du bouton hamburger */
+.hamburger {
+    width: 30px;
+    height: 25px;
+    position: relative;
+    display: block;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    z-index: 1001; /* S'assurer qu'il soit au-dessus */
+}
+
+/* 🌟 Barres du bouton hamburger */
+.hamburger div {
+    background-color: #00FFFF; /* Bleu Fluorescent par défaut */
+    height: 4px;
+    width: 100%;
+    border-radius: 4px;
+    position: absolute;
+    transition: all 0.3s ease;
+}
+
+/* 🌟 Barres de hamburger avec espacement */
+.hamburger div:nth-child(1) {
+    top: 0;
+}
+
+.hamburger div:nth-child(2) {
+    top: 10px;
+}
+
+.hamburger div:nth-child(3) {
+    top: 20px;
+}
+
+/* 🌟 Effet de survol du bouton hamburger */
+.hamburger:hover div {
+    background-color: #FFD700; /* Jaune Pokémon au survol */
+}
+
+/* 🌟 Animation du hamburger lorsqu'il est actif (menu ouvert) */
+.hamburger.open div:nth-child(1) {
+    transform: rotate(45deg);
+    top: 10px;
+}
+
+.hamburger.open div:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.open div:nth-child(3) {
+    transform: rotate(-45deg);
+    top: 10px;
+}
+
+/* 🌟 Style du bouton hamburger */
+.menu-btn {
+    width: 30px;
+    height: 25px;
+    position: fixed; /* Fixe la position par rapport à la fenêtre */
+    top: 20px; /* À 20px du haut */
+    right: 20px; /* À 20px de la droite */
+    display: block;
+    cursor: pointer;
+    z-index: 1001; /* S'assurer qu'il soit au-dessus de tout */
+}
+
+.menu-btn .bar {
+    background-color: #00FFFF; /* Couleur des barres */
+    height: 4px;
+    width: 100%;
+    border-radius: 4px;
+    position: absolute;
+    transition: all 0.3s ease;
+}
+
+/* 🌟 Barres du bouton hamburger (positionnement) */
+.menu-btn .bar:nth-child(1) {
+    top: 0;
+}
+
+.menu-btn .bar:nth-child(2) {
+    top: 10px;
+}
+
+.menu-btn .bar:nth-child(3) {
+    top: 20px;
+}
+
+/* 🌟 Effet de survol du bouton hamburger */
+.menu-btn:hover .bar {
+    background-color: #FFD700; /* Jaune Pokémon au survol */
+}
+
+/* 🌟 Effet d'apparition fluide de l'overlay */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Fond assombri */
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out;
+    z-index: 999;
+}
+
+/* 🌟 Overlay actif quand le menu est ouvert */
+.overlay.active {
+    opacity: 1;
+    visibility: visible;
+}

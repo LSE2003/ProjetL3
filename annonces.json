@@ -1,0 +1,18 @@
+[
+    {
+      "id": 1,
+      "titre": "Retour de la Team Rocket",
+      "date": "18 avril 2025",
+      "description": "La future série Glory of Team Rocket promet de raviver la nostalgie des fans !  Le 18 avril 2025 marquera le grand retour du célèbre groupe antagoniste avec l'extension The Glory of Team Rocket (ou Le Retour de la Team Rocket en français). Cette série très attendue mettra en avant le puissant Mewtwo ex du Team Rocket, ainsi que d'autres Pokémon emblématiques associés à cette équipe iconique. Contrairement aux précédentes extensions où l'accent était mis sur les Pokémon Sombres, cette nouvelle édition se concentrera exclusivement sur les Pokémon du Team Rocket, offrant ainsi une toute nouvelle perspective sur ces personnages."
+    },
+    {
+      "id": 2,
+      "titre": "Leak : premier aperçu des cartes ",
+      "description": "Les premières images des cartes secrètes de la prochaine extension ont fuité...",
+      "images": [
+        "https://i.postimg.cc/sxFSKWmv/Electhor-202-SR.jpg",
+        "https://i.postimg.cc/PJsDgbMs/Drcaufeu-183-UR.jpg"
+      ]
+    }
+  ]
+  
