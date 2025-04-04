@@ -68,29 +68,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 }, 1000);
             }
 
-            // Fonction pour créer un feu d'artifice
-            function triggerFireworks() {
-                fireworksContainer.style.display = 'block'; // Afficher le conteneur du feu d'artifice
-
-                // Créer plusieurs "bouches" de feu d'artifice
-                for (let i = 0; i < 10; i++) {
-                    const firework = document.createElement("div");
-                    firework.classList.add("firework");
-                    firework.style.top = `${Math.random() * window.innerHeight}px`; // Position aléatoire en hauteur
-                    firework.style.left = `${Math.random() * window.innerWidth}px`; // Position aléatoire en largeur
-                    fireworksContainer.appendChild(firework);
-
-                    // Supprimer l'élément après l'animation
-                    setTimeout(() => {
-                        firework.remove();
-                    }, 1000);
-                }
-
-                // Cacher le conteneur après un moment
-                setTimeout(() => {
-                    fireworksContainer.style.display = 'none';
-                }, 2000);
-            }
+        
 
             // Lancer le jeu dès le chargement
             startNewGame();
